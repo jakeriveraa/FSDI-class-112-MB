@@ -1,0 +1,109 @@
+/* Posts Page Styling - Yellow Theme */
+
+/* Body background to match */
+body {
+    background-color: #f5ead6 !important; /* Cream/beige background */
+}
+
+/* Main heading */
+h1 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid #ffc107; /* Yellow border to match navbar */
+}
+
+/* Remove default list styling */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Post card styling - matching yellow/cream theme */
+ul div {
+    background-color: #fff9e6; /* Light yellow/cream */
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #ffc107; /* Yellow accent to match navbar */
+    transition: all 0.3s ease;
+}
+
+/* Hover effect on post cards */
+ul div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(255, 193, 7, 0.3); /* Yellow shadow */
+    border-left-color: #ffb300; /* Darker yellow on hover */
+    background-color: #fffbf0;
+}
+
+/* Post title styling */
+ul div h5 {
+    color: #2c3e50;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+/* Post body text */
+ul div p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+/* Author section - matching yellow theme */
+ul div span {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #ffc107; /* Yellow background */
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+ul div span strong {
+    color: #2c3e50; /* Dark text on yellow */
+}
+
+/* Navbar text visibility improvements */
+.navbar.bg-warning .nav-link {
+    color: #2c3e50 !important;
+    font-weight: 600;
+}
+
+.navbar.bg-warning .nav-link:hover {
+    color: #000 !important;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+}
+
+.navbar.bg-warning .navbar-brand {
+    color: #2c3e50 !important;
+}
+
+.navbar-toggler {
+    border-color: #2c3e50 !important;
+}
+
+.navbar-toggler-icon {
+    filter: brightness(0); /* Makes the icon dark */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    ul div {
+        padding: 1rem;
+    }
+    
+    ul div h5 {
+        font-size: 1.2rem;
+    }
+}
